@@ -10,7 +10,7 @@
   .landing-page {
     display: flex;
     align-items: center;
-    margin-top: 15rem;
+    padding-top: 15rem;
     flex-direction: column;
     width: 100vw;
   }
@@ -116,6 +116,8 @@
     width: fit-content;
     padding-right: 0.8rem;
     height: 4rem;
+    font-weight: 700;
+    font-size: 34px;
     border: 1px solid black;
     padding-left: 13px;
     display: flex;
@@ -124,12 +126,6 @@
     margin-top: 1rem;
     border-radius: 10px;
     background-color: #360369;
-  }
-  
-  .data > p > span {
-    color: white;
-    background-color: #360369;
-    margin-left: 0.3rem;
   }
   
   .down > div > h2 {

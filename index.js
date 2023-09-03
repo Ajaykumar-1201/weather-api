@@ -57,6 +57,7 @@ function offsetInSecondsTotimeZoneName(offsetInSeconds) {
 
 function detailData(weatherData) {
   const landingPage = document.getElementById("main");
+  landingPage.classList.remove("landing-page");
   landingPage.innerHTML = "";
 
   const url = `https://maps.google.com/maps/?q=${weatherData.coord.lat},${weatherData.coord.lon}&output=embed`;
@@ -101,10 +102,10 @@ function detailData(weatherData) {
             <p>Wind Direction : ${direction}</p>
             <p>Temperature : ${Math.round(
               weatherData.main.temp - 273.15
-            )} \u00B0C</p>
+            )}\u00B0C</p>
             <p>Feels like : ${Math.round(
               weatherData.main.feels_like - 273.15
-            )} \u00B0C</p>
+            )}\u00B0C</p>
           </div>
         </div>
     `;
